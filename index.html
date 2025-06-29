@@ -113,7 +113,7 @@
         client.on('connect', () => {
             connectionStatus.textContent = "Conectado al broker MQTT";
             connectionStatus.className = "connected";
-            client.subscribe('mundial/2014.0-7', (err) => {
+            client.subscribe('america/sensor', (err) => {
                 if (!err) {
                     console.log("Suscripción exitosa al tópico mundial/2014.0-7");
                 }
